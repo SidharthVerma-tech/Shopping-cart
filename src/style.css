@@ -1,0 +1,92 @@
+*{
+    margin : 0px;
+    padding: 0px;
+    font-family: 'Cairo', sans-serif;
+}
+i{
+    cursor: pointer;
+}
+.navbar{
+    color: white;
+    background-color: black;
+    padding : 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction : row;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+.cart{
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    border-radius: 8px;
+    position: relative;
+    padding: 10px;
+    height: 50px;
+}
+.cartAmount{
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: -20px;
+    right: -6px;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 5px;
+}
+.item{
+    border: 3px solid black;
+}
+.item img{
+    height: 200px;
+    width: 218px;
+    
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+
+}
+.price i{
+    padding: 12px;
+    padding-top: 4px;
+}
+.price h3{
+    font-weight: bold;
+}
+.price span{
+    font-weight: bold;
+    font-size: 25px;
+}
+.shop{
+    display: grid;
+    grid-template-columns: repeat(4,223px);
+    /* grid-template-rows: repeat(3,423px); */
+    gap: 20px;
+    justify-content: center;
+    /* justify-content: center;
+    align-items: center; */
+}
+.bi-plus-square{
+    color: green;
+}
+.bi-dash-square{
+    color: red;
+}
+@media only screen and (max-width: 1000px) {
+    .shop {
+      background-color: lightblue;
+      grid-template-columns: repeat(2,223px);
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    .shop {
+      background-color: lightyellow;
+      grid-template-columns: repeat(1,223px);
+    }
+  }
