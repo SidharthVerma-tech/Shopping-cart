@@ -1,1 +1,13 @@
 
+
+div class="navbar">
+        <a href="index.html">
+        <h1>Apni Rasoi</h1>
+        </a>
+        <a href="cart.html">
+        <div class="cart">
+            <i class="bi bi-cart3"></i>
+            <span id = "cartIcon" class="cartAmount">0</span>
+        </div>
+    </a>
+    </div>
